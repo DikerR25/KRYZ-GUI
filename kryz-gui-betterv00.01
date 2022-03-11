@@ -3,6 +3,7 @@
 
 -- Instances:
 
+
 local Workspace = game:GetService("Workspace")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
@@ -41,14 +42,23 @@ local jpinput = Instance.new("TextBox")
 local setjp = Instance.new("TextButton")
 local rejp = Instance.new("TextButton")
 local jpclose = Instance.new("TextButton")
-local garisantiafk = Instance.new("TextLabel")
 local garisantibl = Instance.new("TextLabel")
 local textantiblacklist = Instance.new("TextLabel")
-local textantiafk = Instance.new("TextLabel")
-local AntiAFK = Instance.new("TextButton")
 local antiblacklist = Instance.new("TextButton")
-local AntiAFKtime = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local closeframemisc = Instance.new("TextButton")
+local garis = Instance.new("TextLabel")
+local garis_2 = Instance.new("TextLabel")
+local garis_3 = Instance.new("TextLabel")
 local closeframe = Instance.new("TextButton")
+local garis_4 = Instance.new("TextLabel")
+local garis_5 = Instance.new("TextLabel")
+local garis_6 = Instance.new("TextLabel")
+local garis_7 = Instance.new("TextLabel")
+local garis_8 = Instance.new("TextLabel")
+local infogui = Instance.new("TextButton")
+local tombolframemisc = Instance.new("TextButton")
+local open = Instance.new("TextButton")
 
 local Plr = Players.LocalPlayer
 local Clipon = false
@@ -62,25 +72,27 @@ maingui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 guiframe.Name = "guiframe"
 guiframe.Parent = maingui
-guiframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-guiframe.Position = UDim2.new(0.0401460007, 0, 0.0899470896, 0)
+guiframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+guiframe.Position = UDim2.new(0.122993141, 0, 0, 0)
 guiframe.Size = UDim2.new(0, 744, 0, 465)
+guiframe.Visible = false
 guiframe.Active = true
 guiframe.Draggable = true
 
 framemisclocal.Name = "framemisclocal"
 framemisclocal.Parent = guiframe
 framemisclocal.Active = true
-framemisclocal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+framemisclocal.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+framemisclocal.BorderColor3 = Color3.fromRGB(0, 0, 0)
 framemisclocal.Position = UDim2.new(0.205157816, 0, 0.0446692184, 0)
 framemisclocal.Size = UDim2.new(0, 591, 0, 419)
-framemisclocal.CanvasPosition = Vector2.new(0, 46)
+framemisclocal.Visible = false
 framemisclocal.CanvasSize = UDim2.new(0, 0, 1, 0)
 framemisclocal.ScrollBarThickness = 20
 
 garisnoclip.Name = "garisnoclip"
 garisnoclip.Parent = framemisclocal
-garisnoclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+garisnoclip.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 garisnoclip.Position = UDim2.new(0.038917087, 0, 0.0724955127, 0)
 garisnoclip.Size = UDim2.new(0, 530, 0, 40)
 garisnoclip.Font = Enum.Font.SourceSans
@@ -90,46 +102,55 @@ garisnoclip.TextSize = 14.000
 
 textnoclip.Name = "textnoclip"
 textnoclip.Parent = framemisclocal
-textnoclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textnoclip.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+textnoclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
 textnoclip.Position = UDim2.new(0.0558375604, 0, 0.0938638374, 0)
 textnoclip.Size = UDim2.new(0, 118, 0, 23)
 textnoclip.Font = Enum.Font.SourceSans
 textnoclip.Text = "NOCLIP"
-textnoclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+textnoclip.TextColor3 = Color3.fromRGB(255, 255, 255)
 textnoclip.TextSize = 14.000
+textnoclip.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 noclip.Name = "noclip"
 noclip.Parent = framemisclocal
-noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+noclip.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
 noclip.Position = UDim2.new(0.710659921, 0, 0.0898120105, 0)
 noclip.Size = UDim2.new(0, 118, 0, 23)
 noclip.Font = Enum.Font.SourceSans
-noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+noclip.Text = "Click"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
 noclip.TextSize = 14.000
+noclip.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 StatusPF.Name = "StatusPF"
 StatusPF.Parent = framemisclocal
-StatusPF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatusPF.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+StatusPF.BorderColor3 = Color3.fromRGB(0, 0, 0)
 StatusPF.Position = UDim2.new(0.265651435, 0, 0.0967741981, 0)
 StatusPF.Size = UDim2.new(0, 56, 0, 20)
 StatusPF.Font = Enum.Font.SourceSans
 StatusPF.Text = "status"
-StatusPF.TextColor3 = Color3.fromRGB(0, 0, 0)
+StatusPF.TextColor3 = Color3.fromRGB(255, 255, 255)
 StatusPF.TextSize = 14.000
+StatusPF.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 Status.Name = "Status"
 Status.Parent = framemisclocal
-Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Status.Position = UDim2.new(0.372250408, 0, 0.0967741981, 0)
 Status.Size = UDim2.new(0, 56, 0, 20)
 Status.Font = Enum.Font.SourceSans
 Status.Text = "off"
-Status.TextColor3 = Color3.fromRGB(170, 0, 0)
+Status.TextColor3 = Color3.fromRGB(255, 0, 0)
 Status.TextSize = 14.000
+Status.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 garisfly.Name = "garisfly"
 garisfly.Parent = framemisclocal
-garisfly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+garisfly.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 garisfly.Position = UDim2.new(0.038917087, 0, 0.175734743, 0)
 garisfly.Size = UDim2.new(0, 530, 0, 40)
 garisfly.Font = Enum.Font.SourceSans
@@ -139,28 +160,34 @@ garisfly.TextSize = 14.000
 
 textfly.Name = "textfly"
 textfly.Parent = framemisclocal
-textfly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textfly.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+textfly.BorderColor3 = Color3.fromRGB(0, 0, 0)
 textfly.Position = UDim2.new(0.0558375642, 0, 0.192788586, 0)
 textfly.Size = UDim2.new(0, 118, 0, 23)
 textfly.Font = Enum.Font.SourceSans
 textfly.Text = "FLY"
-textfly.TextColor3 = Color3.fromRGB(0, 0, 0)
+textfly.TextColor3 = Color3.fromRGB(255, 255, 255)
 textfly.TextSize = 14.000
+textfly.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 fly.Name = "fly"
 fly.Parent = framemisclocal
-fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fly.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fly.Position = UDim2.new(0.710659921, 0, 0.191962555, 0)
 fly.Size = UDim2.new(0, 118, 0, 23)
 fly.Font = Enum.Font.SourceSans
-fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+fly.Text = "Click"
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
 fly.TextSize = 14.000
+fly.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 Status_2.Name = "Status"
 Status_2.Parent = framemisclocal
 Status_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Status_2.Position = UDim2.new(0.372000009, 0, 0.195999995, 0)
 Status_2.Size = UDim2.new(0, 56, 0, 20)
+Status_2.Visible = false
 Status_2.Font = Enum.Font.SourceSans
 Status_2.Text = "off"
 Status_2.TextColor3 = Color3.fromRGB(170, 0, 0)
@@ -171,6 +198,7 @@ StatusPF_2.Parent = framemisclocal
 StatusPF_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 StatusPF_2.Position = UDim2.new(0.265651435, 0, 0.195698932, 0)
 StatusPF_2.Size = UDim2.new(0, 56, 0, 20)
+StatusPF_2.Visible = false
 StatusPF_2.Font = Enum.Font.SourceSans
 StatusPF_2.Text = "status"
 StatusPF_2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -178,7 +206,7 @@ StatusPF_2.TextSize = 14.000
 
 garistpclick.Name = "garistpclick"
 garistpclick.Parent = framemisclocal
-garistpclick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+garistpclick.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 garistpclick.Position = UDim2.new(0.038917087, 0, 0.278947115, 0)
 garistpclick.Size = UDim2.new(0, 530, 0, 40)
 garistpclick.Font = Enum.Font.SourceSans
@@ -188,26 +216,31 @@ garistpclick.TextSize = 14.000
 
 texttpclick.Name = "texttpclick"
 texttpclick.Parent = framemisclocal
-texttpclick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+texttpclick.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+texttpclick.BorderColor3 = Color3.fromRGB(0, 0, 0)
 texttpclick.Position = UDim2.new(0.0558375604, 0, 0.296014369, 0)
 texttpclick.Size = UDim2.new(0, 118, 0, 23)
 texttpclick.Font = Enum.Font.SourceSans
 texttpclick.Text = "TP CLICK"
-texttpclick.TextColor3 = Color3.fromRGB(0, 0, 0)
+texttpclick.TextColor3 = Color3.fromRGB(255, 255, 255)
 texttpclick.TextSize = 14.000
+texttpclick.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 tpclick.Name = "tpclick"
 tpclick.Parent = framemisclocal
-tpclick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpclick.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+tpclick.BorderColor3 = Color3.fromRGB(0, 0, 0)
 tpclick.Position = UDim2.new(0.710659921, 0, 0.295188367, 0)
 tpclick.Size = UDim2.new(0, 118, 0, 23)
 tpclick.Font = Enum.Font.SourceSans
-tpclick.TextColor3 = Color3.fromRGB(0, 0, 0)
+tpclick.Text = "Click"
+tpclick.TextColor3 = Color3.fromRGB(255, 255, 255)
 tpclick.TextSize = 14.000
+tpclick.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 garisinfinitejump.Name = "garisinfinitejump"
 garisinfinitejump.Parent = framemisclocal
-garisinfinitejump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+garisinfinitejump.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 garisinfinitejump.Position = UDim2.new(0.038917087, 0, 0.386474013, 0)
 garisinfinitejump.Size = UDim2.new(0, 530, 0, 40)
 garisinfinitejump.Font = Enum.Font.SourceSans
@@ -217,26 +250,31 @@ garisinfinitejump.TextSize = 14.000
 
 textinfinitejump.Name = "textinfinitejump"
 textinfinitejump.Parent = framemisclocal
-textinfinitejump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textinfinitejump.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+textinfinitejump.BorderColor3 = Color3.fromRGB(0, 0, 0)
 textinfinitejump.Position = UDim2.new(0.0558375604, 0, 0.403541267, 0)
 textinfinitejump.Size = UDim2.new(0, 118, 0, 23)
 textinfinitejump.Font = Enum.Font.SourceSans
 textinfinitejump.Text = "INFINITE JUMP"
-textinfinitejump.TextColor3 = Color3.fromRGB(0, 0, 0)
+textinfinitejump.TextColor3 = Color3.fromRGB(255, 255, 255)
 textinfinitejump.TextSize = 14.000
+textinfinitejump.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 infinitejump.Name = "infinitejump"
 infinitejump.Parent = framemisclocal
-infinitejump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infinitejump.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+infinitejump.BorderColor3 = Color3.fromRGB(0, 0, 0)
 infinitejump.Position = UDim2.new(0.710659921, 0, 0.402715266, 0)
 infinitejump.Size = UDim2.new(0, 118, 0, 23)
 infinitejump.Font = Enum.Font.SourceSans
-infinitejump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infinitejump.Text = "Click"
+infinitejump.TextColor3 = Color3.fromRGB(255, 255, 255)
 infinitejump.TextSize = 14.000
+infinitejump.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 gariswalkspeed.Name = "gariswalkspeed"
 gariswalkspeed.Parent = framemisclocal
-gariswalkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gariswalkspeed.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 gariswalkspeed.Position = UDim2.new(0.038917087, 0, 0.496151447, 0)
 gariswalkspeed.Size = UDim2.new(0, 530, 0, 40)
 gariswalkspeed.Font = Enum.Font.SourceSans
@@ -246,12 +284,15 @@ gariswalkspeed.TextSize = 14.000
 
 walkspeed.Name = "walkspeed"
 walkspeed.Parent = framemisclocal
-walkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+walkspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
 walkspeed.Position = UDim2.new(0.710659921, 0, 0.5123927, 0)
 walkspeed.Size = UDim2.new(0, 118, 0, 23)
 walkspeed.Font = Enum.Font.SourceSans
-walkspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+walkspeed.Text = "Click"
+walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
 walkspeed.TextSize = 14.000
+walkspeed.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 wsframe.Name = "wsframe"
 wsframe.Parent = walkspeed
@@ -267,7 +308,7 @@ wsinput.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 wsinput.BorderColor3 = Color3.fromRGB(255, 255, 255)
 wsinput.Position = UDim2.new(0.040050745, 0, 0.252962083, 0)
 wsinput.Size = UDim2.new(0, 96, 0, 20)
-wsinput.Font = Enum.Font.Bangers
+wsinput.Font = Enum.Font.ArialBold
 wsinput.Text = ""
 wsinput.TextColor3 = Color3.fromRGB(255, 255, 255)
 wsinput.TextScaled = true
@@ -280,7 +321,7 @@ setws.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 setws.BorderColor3 = Color3.fromRGB(255, 255, 255)
 setws.Position = UDim2.new(0.253020465, 0, 0.260189563, 0)
 setws.Size = UDim2.new(0, 83, 0, 20)
-setws.Font = Enum.Font.Bangers
+setws.Font = Enum.Font.ArialBold
 setws.Text = "Set Walk Speed"
 setws.TextColor3 = Color3.fromRGB(255, 255, 255)
 setws.TextScaled = true
@@ -293,7 +334,7 @@ rews.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 rews.BorderColor3 = Color3.fromRGB(255, 255, 255)
 rews.Position = UDim2.new(0.433074415, 0, 0.260189593, 0)
 rews.Size = UDim2.new(0, 83, 0, 20)
-rews.Font = Enum.Font.Bangers
+rews.Font = Enum.Font.ArialBold
 rews.Text = "Reset Walk Speed"
 rews.TextColor3 = Color3.fromRGB(255, 255, 255)
 rews.TextScaled = true
@@ -315,17 +356,19 @@ wsclose.TextWrapped = true
 
 textwalkspeed.Name = "textwalkspeed"
 textwalkspeed.Parent = framemisclocal
-textwalkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textwalkspeed.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+textwalkspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
 textwalkspeed.Position = UDim2.new(0.0558375604, 0, 0.513218701, 0)
 textwalkspeed.Size = UDim2.new(0, 118, 0, 23)
 textwalkspeed.Font = Enum.Font.SourceSans
 textwalkspeed.Text = "WALK SPEED"
-textwalkspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+textwalkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
 textwalkspeed.TextSize = 14.000
+textwalkspeed.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 garisjumppower.Name = "garisjumppower"
 garisjumppower.Parent = framemisclocal
-garisjumppower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+garisjumppower.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 garisjumppower.Position = UDim2.new(0.038917087, 0, 0.603678346, 0)
 garisjumppower.Size = UDim2.new(0, 530, 0, 40)
 garisjumppower.Font = Enum.Font.SourceSans
@@ -335,22 +378,27 @@ garisjumppower.TextSize = 14.000
 
 textjumppower.Name = "textjumppower"
 textjumppower.Parent = framemisclocal
-textjumppower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textjumppower.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+textjumppower.BorderColor3 = Color3.fromRGB(0, 0, 0)
 textjumppower.Position = UDim2.new(0.0558375604, 0, 0.620745599, 0)
 textjumppower.Size = UDim2.new(0, 118, 0, 23)
 textjumppower.Font = Enum.Font.SourceSans
 textjumppower.Text = "JUMP POWER"
-textjumppower.TextColor3 = Color3.fromRGB(0, 0, 0)
+textjumppower.TextColor3 = Color3.fromRGB(255, 255, 255)
 textjumppower.TextSize = 14.000
+textjumppower.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 jumppower.Name = "jumppower"
 jumppower.Parent = framemisclocal
-jumppower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jumppower.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+jumppower.BorderColor3 = Color3.fromRGB(0, 0, 0)
 jumppower.Position = UDim2.new(0.710659921, 0, 0.619919598, 0)
 jumppower.Size = UDim2.new(0, 118, 0, 23)
 jumppower.Font = Enum.Font.SourceSans
-jumppower.TextColor3 = Color3.fromRGB(0, 0, 0)
+jumppower.Text = "Click"
+jumppower.TextColor3 = Color3.fromRGB(255, 255, 255)
 jumppower.TextSize = 14.000
+jumppower.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 jpframe.Name = "jpframe"
 jpframe.Parent = jumppower
@@ -366,9 +414,10 @@ jpinput.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 jpinput.BorderColor3 = Color3.fromRGB(255, 255, 255)
 jpinput.Position = UDim2.new(0.0401783586, 0, 0.227962047, 0)
 jpinput.Size = UDim2.new(0, 96, 0, 20)
-jpinput.Font = Enum.Font.Bangers
+jpinput.Font = Enum.Font.ArialBold
 jpinput.Text = ""
 jpinput.TextColor3 = Color3.fromRGB(255, 255, 255)
+jpinput.TextScaled = true
 jpinput.TextSize = 14.000
 jpinput.TextWrapped = true
 
@@ -378,9 +427,10 @@ setjp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 setjp.BorderColor3 = Color3.fromRGB(255, 255, 255)
 setjp.Position = UDim2.new(0.253020465, 0, 0.222403392, 0)
 setjp.Size = UDim2.new(0, 83, 0, 20)
-setjp.Font = Enum.Font.Bangers
+setjp.Font = Enum.Font.ArialBold
 setjp.Text = "Set Jump Power"
 setjp.TextColor3 = Color3.fromRGB(255, 255, 255)
+setjp.TextScaled = true
 setjp.TextSize = 14.000
 setjp.TextWrapped = true
 
@@ -390,9 +440,10 @@ rejp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 rejp.BorderColor3 = Color3.fromRGB(255, 255, 255)
 rejp.Position = UDim2.new(0.434895039, 0, 0.247403398, 0)
 rejp.Size = UDim2.new(0, 83, 0, 20)
-rejp.Font = Enum.Font.Bangers
+rejp.Font = Enum.Font.ArialBold
 rejp.Text = "Reset Jump Power"
 rejp.TextColor3 = Color3.fromRGB(255, 255, 255)
+rejp.TextScaled = true
 rejp.TextSize = 14.000
 rejp.TextWrapped = true
 
@@ -409,19 +460,9 @@ jpclose.TextScaled = true
 jpclose.TextSize = 14.000
 jpclose.TextWrapped = true
 
-garisantiafk.Name = "garisantiafk"
-garisantiafk.Parent = framemisclocal
-garisantiafk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-garisantiafk.Position = UDim2.new(0.038917087, 0, 0.825183749, 0)
-garisantiafk.Size = UDim2.new(0, 530, 0, 40)
-garisantiafk.Font = Enum.Font.SourceSans
-garisantiafk.Text = ""
-garisantiafk.TextColor3 = Color3.fromRGB(0, 0, 0)
-garisantiafk.TextSize = 14.000
-
 garisantibl.Name = "garisantibl"
 garisantibl.Parent = framemisclocal
-garisantibl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+garisantibl.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 garisantibl.Position = UDim2.new(0.038917087, 0, 0.71335578, 0)
 garisantibl.Size = UDim2.new(0, 530, 0, 40)
 garisantibl.Font = Enum.Font.SourceSans
@@ -431,67 +472,215 @@ garisantibl.TextSize = 14.000
 
 textantiblacklist.Name = "textantiblacklist"
 textantiblacklist.Parent = framemisclocal
-textantiblacklist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textantiblacklist.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+textantiblacklist.BorderColor3 = Color3.fromRGB(0, 0, 0)
 textantiblacklist.Position = UDim2.new(0.0558375604, 0, 0.730423033, 0)
 textantiblacklist.Size = UDim2.new(0, 118, 0, 23)
 textantiblacklist.Font = Enum.Font.SourceSans
 textantiblacklist.Text = "ANTI BLACKLIST"
-textantiblacklist.TextColor3 = Color3.fromRGB(0, 0, 0)
+textantiblacklist.TextColor3 = Color3.fromRGB(255, 255, 255)
 textantiblacklist.TextSize = 14.000
-
-textantiafk.Name = "textantiafk"
-textantiafk.Parent = framemisclocal
-textantiafk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-textantiafk.Position = UDim2.new(0.0558375604, 0, 0.842251003, 0)
-textantiafk.Size = UDim2.new(0, 118, 0, 23)
-textantiafk.Font = Enum.Font.SourceSans
-textantiafk.Text = "ANTI AFK"
-textantiafk.TextColor3 = Color3.fromRGB(0, 0, 0)
-textantiafk.TextSize = 14.000
-
-AntiAFK.Name = "AntiAFK"
-AntiAFK.Parent = framemisclocal
-AntiAFK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiAFK.Position = UDim2.new(0.710659921, 0, 0.841425002, 0)
-AntiAFK.Size = UDim2.new(0, 118, 0, 23)
-AntiAFK.Font = Enum.Font.SourceSans
-AntiAFK.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAFK.TextSize = 14.000
+textantiblacklist.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 antiblacklist.Name = "antiblacklist"
 antiblacklist.Parent = framemisclocal
-antiblacklist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+antiblacklist.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+antiblacklist.BorderColor3 = Color3.fromRGB(0, 0, 0)
 antiblacklist.Position = UDim2.new(0.710659921, 0, 0.729597032, 0)
 antiblacklist.Size = UDim2.new(0, 118, 0, 23)
 antiblacklist.Font = Enum.Font.SourceSans
-antiblacklist.TextColor3 = Color3.fromRGB(0, 0, 0)
+antiblacklist.Text = "Click"
+antiblacklist.TextColor3 = Color3.fromRGB(255, 255, 255)
 antiblacklist.TextSize = 14.000
+antiblacklist.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-AntiAFKtime.Name = "AntiAFKtime"
-AntiAFKtime.Parent = framemisclocal
-AntiAFKtime.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiAFKtime.Position = UDim2.new(0.265651435, 0, 0.845930636, 0)
-AntiAFKtime.Size = UDim2.new(0, 118, 0, 20)
-AntiAFKtime.Font = Enum.Font.SourceSans
-AntiAFKtime.Text = "AFK for: 0 Seconds"
-AntiAFKtime.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAFKtime.TextSize = 14.000
+TextLabel.Parent = framemisclocal
+TextLabel.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+TextLabel.Position = UDim2.new(0.0373079702, 0, 0.823804736, 0)
+TextLabel.Size = UDim2.new(0, 530, 0, 65)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "-- Press F to Fly--\\n-- Click TP Hotkey : CTRL--\\n-- Press R to uninfinite jump--"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+closeframemisc.Name = "closeframemisc"
+closeframemisc.Parent = framemisclocal
+closeframemisc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closeframemisc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closeframemisc.Position = UDim2.new(0.922035098, 0, -0.00166110322, 0)
+closeframemisc.Size = UDim2.new(0, 38, 0, 13)
+closeframemisc.Font = Enum.Font.ArialBold
+closeframemisc.Text = "_"
+closeframemisc.TextColor3 = Color3.fromRGB(255, 0, 0)
+closeframemisc.TextScaled = true
+closeframemisc.TextSize = 30.000
+closeframemisc.TextWrapped = true
+
+garis.Name = "garis"
+garis.Parent = guiframe
+garis.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis.BorderColor3 = Color3.fromRGB(0, 0, 0)
+garis.BorderSizePixel = 5
+garis.Position = UDim2.new(-6.14043238e-05, 0, 0.945613861, 0)
+garis.Size = UDim2.new(0, 744, 0, 25)
+garis.Font = Enum.Font.SourceSans
+garis.Text = ""
+garis.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis.TextSize = 14.000
+
+garis_2.Name = "garis"
+garis_2.Parent = guiframe
+garis_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+garis_2.BorderSizePixel = 5
+garis_2.Position = UDim2.new(-0.00140549033, 0, 0.00582892308, 0)
+garis_2.Size = UDim2.new(0, 744, 0, 15)
+garis_2.Font = Enum.Font.SourceSans
+garis_2.Text = ""
+garis_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis_2.TextSize = 14.000
+
+garis_3.Name = "garis"
+garis_3.Parent = guiframe
+garis_3.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+garis_3.BorderSizePixel = 5
+garis_3.Position = UDim2.new(0.989185929, 0, 0.00582892308, 0)
+garis_3.Size = UDim2.new(0, 9, 0, 462)
+garis_3.Font = Enum.Font.SourceSans
+garis_3.Text = ""
+garis_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis_3.TextSize = 14.000
 
 closeframe.Name = "closeframe"
 closeframe.Parent = guiframe
-closeframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-closeframe.BorderColor3 = Color3.fromRGB(255, 255, 255)
-closeframe.Position = UDim2.new(0.969808102, 0, 0.0064516128, 0)
-closeframe.Size = UDim2.new(0, 15, 0, 15)
+closeframe.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+closeframe.BorderColor3 = Color3.fromRGB(79, 79, 79)
+closeframe.Position = UDim2.new(0.97787261, 0, 0.00797946192, 0)
+closeframe.Size = UDim2.new(0, 15, 0, 13)
 closeframe.Font = Enum.Font.ArialBold
 closeframe.Text = "X"
-closeframe.TextColor3 = Color3.fromRGB(170, 0, 0)
+closeframe.TextColor3 = Color3.fromRGB(255, 0, 0)
 closeframe.TextScaled = true
 closeframe.TextSize = 14.000
+closeframe.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 closeframe.TextWrapped = true
 
------------SCRIPT----------
+garis_4.Name = "garis"
+garis_4.Parent = guiframe
+garis_4.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+garis_4.BorderSizePixel = 5
+garis_4.Position = UDim2.new(-0.00274956622, 0, 0.00582892308, 0)
+garis_4.Size = UDim2.new(0, 17, 0, 462)
+garis_4.Font = Enum.Font.SourceSans
+garis_4.Text = ""
+garis_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis_4.TextSize = 14.000
 
+garis_5.Name = "garis"
+garis_5.Parent = guiframe
+garis_5.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis_5.BorderColor3 = Color3.fromRGB(79, 79, 79)
+garis_5.BorderSizePixel = 5
+garis_5.Position = UDim2.new(0.192142904, 0, 0.0365591384, 0)
+garis_5.Size = UDim2.new(0, 9, 0, 422)
+garis_5.Font = Enum.Font.SourceSans
+garis_5.Text = ""
+garis_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis_5.TextSize = 14.000
+
+garis_6.Name = "garis"
+garis_6.Parent = guiframe
+garis_6.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis_6.BorderColor3 = Color3.fromRGB(79, 79, 79)
+garis_6.BorderSizePixel = 5
+garis_6.Position = UDim2.new(0.0120353699, 0, 0.956366539, 0)
+garis_6.Size = UDim2.new(0, 35, 0, 15)
+garis_6.Font = Enum.Font.SourceSans
+garis_6.Text = ""
+garis_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis_6.TextSize = 14.000
+
+garis_7.Name = "garis"
+garis_7.Parent = guiframe
+garis_7.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis_7.BorderColor3 = Color3.fromRGB(79, 79, 79)
+garis_7.BorderSizePixel = 5
+garis_7.Position = UDim2.new(0.946175158, 0, 0.956366539, 0)
+garis_7.Size = UDim2.new(0, 35, 0, 15)
+garis_7.Font = Enum.Font.SourceSans
+garis_7.Text = ""
+garis_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis_7.TextSize = 14.000
+
+garis_8.Name = "garis"
+garis_8.Parent = guiframe
+garis_8.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garis_8.BorderColor3 = Color3.fromRGB(79, 79, 79)
+garis_8.BorderSizePixel = 5
+garis_8.Position = UDim2.new(0.0120000001, 0, 0.0161290318, 0)
+garis_8.Size = UDim2.new(0, 35, 0, 5)
+garis_8.Font = Enum.Font.SourceSans
+garis_8.Text = ""
+garis_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+garis_8.TextSize = 14.000
+
+infogui.Name = "infogui"
+infogui.Parent = guiframe
+infogui.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+infogui.BorderColor3 = Color3.fromRGB(255, 255, 255)
+infogui.Position = UDim2.new(0.032626532, 0, 0.0844357386, 0)
+infogui.Size = UDim2.new(0, 105, 0, 23)
+infogui.Font = Enum.Font.SourceSans
+infogui.Text = "INFO GUI"
+infogui.TextColor3 = Color3.fromRGB(255, 255, 255)
+infogui.TextSize = 14.000
+infogui.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tombolframemisc.Name = "tombolframemisc"
+tombolframemisc.Parent = guiframe
+tombolframemisc.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+tombolframemisc.BorderColor3 = Color3.fromRGB(255, 255, 255)
+tombolframemisc.Position = UDim2.new(0.032626532, 0, 0.170457244, 0)
+tombolframemisc.Size = UDim2.new(0, 105, 0, 23)
+tombolframemisc.Font = Enum.Font.SourceSans
+tombolframemisc.Text = "MISC CHARACTER"
+tombolframemisc.TextColor3 = Color3.fromRGB(255, 255, 255)
+tombolframemisc.TextSize = 14.000
+tombolframemisc.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+open.Name = "open"
+open.Parent = maingui
+open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+open.Position = UDim2.new(-0.000367566943, 0, 0.951525569, 0)
+open.Size = UDim2.new(0, 67, 0, 27)
+open.Style = Enum.ButtonStyle.RobloxButton
+open.Font = Enum.Font.SourceSans
+open.Text = "OPEN"
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextSize = 14.000
+
+----------SCRIPT------------
+
+open.MouseButton1Click:Connect(function()
+	guiframe.Visible = true
+	open.Visible = false
+end)
+
+closeframe.MouseButton1Click:Connect(function()
+	guiframe.Visible = false
+	open.Visible = true
+end)
+
+tombolframemisc.MouseButton1Click:Connect(function()
+	framemisclocal.Visible = true
+end)
+
+closeframemisc.MouseButton1Click:Connect(function()
+	framemisclocal.Visible = false
+end)
 noclip.MouseButton1Click:connect(function()
 	if Status.Text == "off" then
 		Clipon = true
@@ -573,6 +762,7 @@ fly.MouseButton1Click:Connect(function()
 			bv:Destroy() 
 			plr.Character.Humanoid.PlatformStand = false 
 		end 
+		
 		mouse.KeyDown:connect(function(key) 
 			if key:lower() == "f" then 
 				if flying then flying = false 
@@ -590,6 +780,7 @@ fly.MouseButton1Click:Connect(function()
 				ctrl.r = 1 
 			end 
 		end) 
+		
 		mouse.KeyUp:connect(function(key) 
 			if key:lower() == "w" then 
 				ctrl.f = 0 
@@ -742,57 +933,3 @@ game:service'Players'.LocalPlayer.Idled:connect(function()
 	bb:CaptureController()
 	bb:ClickButton2(Vector2.new())
 	ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
-wait(1)
-print("Checking if Anti_Kick is already running.")
-wait(2)
-table.foreach(workspace:GetChildren(),function(a,b) if b.Name=="Anti_Kicklul" then game:GetService("Workspace").Anti_Kicklul:Destroy() end end)
-wait(1)
-warn("Initializing Anti Kick... DM <-[Tohru]->#6917 via Discord for questions...")
-wait(1.5)
-Instance.new("BoolValue",workspace).Name="Anti_Kicklul"
-AK=math.random(1,2)
-if AK==1 then
-	game.Workspace.Anti_Kicklul.Value = true
-elseif AK==2 then
-	game.Workspace.Anti_Kicklul.Value = false
-end
-wait(2.5)
-AntiKick = game.Workspace.Anti_Kicklul.Value
-if AntiKick == true then
-	print("Anti kick has loaded and is now running. Took [8] Seconds!")
-elseif AntiKick == false then
-	print("Anti kick failed to run! Run Script again")
-end
-wait(1)
-if AntiKick ==true then
-	game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
-	print("Character Respawned. Anti Kick Should Work Fine Now!")
-end
--------------------------------------------------------------------------------------------------------------------------------
-wait(5)
-print("Checking if Anti_Kick is already running.")
-wait(2)
-table.foreach(workspace:GetChildren(),function(a,b) if b.Name=="Anti_Kicklul" then game:GetService("Workspace").Anti_Kicklul:Destroy() end end)
-wait(1)
-warn("Initializing Anti Kick... DM <-[Tohru]->#6917 via Discord for questions...")
-wait(1.5)
-Instance.new("BoolValue",workspace).Name="Anti_Kicklul"
-AK=math.random(1,2)
-if AK==1 then
-	game.Workspace.Anti_Kicklul.Value = true
-elseif AK==2 then
-	game.Workspace.Anti_Kicklul.Value = false
-end
-wait(2.5)
-AntiKick = game.Workspace.Anti_Kicklul.Value
-if AntiKick == true then
-	print("Anti kick has loaded and is now running. Took [8] Seconds!")
-elseif AntiKick == false then
-	print("Anti kick failed to run! Run Script again")
-end
-wait(1)
-if AntiKick ==true then
-	game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
-	print("Character Respawned. Anti Kick Should Work Fine Now!")
-end
--------------------------------------------------------------------------------------------------------------------------------------
