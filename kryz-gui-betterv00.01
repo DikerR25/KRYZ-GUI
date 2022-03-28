@@ -24,6 +24,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 -- Instances:
 
+
 local Workspace = game:GetService("Workspace")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
@@ -95,6 +96,17 @@ local slot6 = Instance.new("TextButton")
 local slot5 = Instance.new("TextButton")
 local slot4 = Instance.new("TextButton")
 local donatebaseclose = Instance.new("TextButton")
+local garisdupemoney = Instance.new("TextLabel")
+local dupemoney = Instance.new("TextButton")
+local framedupemoney = Instance.new("Frame")
+local slot1m = Instance.new("TextButton")
+local slot2m = Instance.new("TextButton")
+local slot3m = Instance.new("TextButton")
+local slot6m = Instance.new("TextButton")
+local slot5m = Instance.new("TextButton")
+local slot4m = Instance.new("TextButton")
+local dupemoneyclose = Instance.new("TextButton")
+local textdupemoney = Instance.new("TextLabel")
 local garis = Instance.new("TextLabel")
 local garis_2 = Instance.new("TextLabel")
 local garis_3 = Instance.new("TextLabel")
@@ -104,6 +116,41 @@ local garis_6 = Instance.new("TextLabel")
 local garis_7 = Instance.new("TextLabel")
 local garis_8 = Instance.new("TextLabel")
 local closeframe = Instance.new("TextButton")
+local framewaypoint = Instance.new("Frame")
+local garisland_2 = Instance.new("TextLabel")
+local garisland_3 = Instance.new("TextLabel")
+local texttpcar = Instance.new("TextLabel")
+local texttpchar = Instance.new("TextLabel")
+local tomboltpchar = Instance.new("TextButton")
+local frametpchar = Instance.new("Frame")
+local WoodRUs = Instance.new("TextButton")
+local BoxedCar = Instance.new("TextButton")
+local Furnishings = Instance.new("TextButton")
+local LogicShop = Instance.new("TextButton")
+local LandStore = Instance.new("TextButton")
+local BobsShack = Instance.new("TextButton")
+local ArtsShop = Instance.new("TextButton")
+local PowerShop = Instance.new("TextButton")
+local SnowGlow = Instance.new("TextButton")
+local CaveCrawler = Instance.new("TextButton")
+local Frost = Instance.new("TextButton")
+local Green = Instance.new("TextButton")
+local Gold = Instance.new("TextButton")
+local Volcano = Instance.new("TextButton")
+local Cherry = Instance.new("TextButton")
+local Oak = Instance.new("TextButton")
+local Generic = Instance.new("TextButton")
+local Birch = Instance.new("TextButton")
+local Fir = Instance.new("TextButton")
+local Palm = Instance.new("TextButton")
+local Koa = Instance.new("TextButton")
+local Elm = Instance.new("TextButton")
+local Walnut = Instance.new("TextButton")
+local Pine = Instance.new("TextButton")
+local closeframetpchar = Instance.new("TextButton")
+local tomboltpcar = Instance.new("TextButton")
+local waypointtext = Instance.new("TextLabel")
+local closeframeway = Instance.new("TextButton")
 local open = Instance.new("TextButton")
 
 local Plr = Players.LocalPlayer
@@ -768,7 +815,7 @@ textdonatebase.Name = "textdonate base"
 textdonatebase.Parent = frameland
 textdonatebase.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
 textdonatebase.BorderColor3 = Color3.fromRGB(0, 0, 0)
-textdonatebase.Position = UDim2.new(0.399323195, 0, 0.248302236, 0)
+textdonatebase.Position = UDim2.new(0.142131984, 0, 0.245915607, 0)
 textdonatebase.Size = UDim2.new(0, 118, 0, 23)
 textdonatebase.Font = Enum.Font.SourceSans
 textdonatebase.Text = "DONATE BASE"
@@ -780,7 +827,7 @@ donatebase.Name = "donatebase"
 donatebase.Parent = frameland
 donatebase.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
 donatebase.BorderColor3 = Color3.fromRGB(0, 0, 0)
-donatebase.Position = UDim2.new(0.397631168, 0, 0.335889488, 0)
+donatebase.Position = UDim2.new(0.653130352, 0, 0.242810726, 0)
 donatebase.Size = UDim2.new(0, 118, 0, 23)
 donatebase.Font = Enum.Font.ArialBold
 donatebase.Text = "V"
@@ -793,7 +840,7 @@ donatebase.TextWrapped = true
 framedonatebase.Name = "framedonatebase"
 framedonatebase.Parent = donatebase
 framedonatebase.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-framedonatebase.Position = UDim2.new(-1.72881353, 0, 0, 0)
+framedonatebase.Position = UDim2.new(-3.01694918, 0, 0.0434782617, 0)
 framedonatebase.Size = UDim2.new(0, 530, 0, 265)
 framedonatebase.Visible = false
 
@@ -877,6 +924,130 @@ donatebaseclose.TextScaled = true
 donatebaseclose.TextSize = 30.000
 donatebaseclose.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 donatebaseclose.TextWrapped = true
+
+garisdupemoney.Name = "garisdupemoney"
+garisdupemoney.Parent = frameland
+garisdupemoney.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garisdupemoney.Position = UDim2.new(0.0507614166, 0, 0.350587279, 0)
+garisdupemoney.Size = UDim2.new(0, 530, 0, 40)
+garisdupemoney.Font = Enum.Font.SourceSans
+garisdupemoney.Text = ""
+garisdupemoney.TextColor3 = Color3.fromRGB(0, 0, 0)
+garisdupemoney.TextSize = 14.000
+
+dupemoney.Name = "dupemoney"
+dupemoney.Parent = frameland
+dupemoney.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+dupemoney.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dupemoney.Position = UDim2.new(0.653130352, 0, 0.369302392, 0)
+dupemoney.Size = UDim2.new(0, 118, 0, 23)
+dupemoney.Font = Enum.Font.ArialBold
+dupemoney.Text = "V"
+dupemoney.TextColor3 = Color3.fromRGB(255, 255, 255)
+dupemoney.TextScaled = true
+dupemoney.TextSize = 14.000
+dupemoney.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+dupemoney.TextWrapped = true
+
+framedupemoney.Name = "framedupemoney"
+framedupemoney.Parent = dupemoney
+framedupemoney.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+framedupemoney.Position = UDim2.new(-3.01593208, 0, -2.27956533, 0)
+framedupemoney.Size = UDim2.new(0, 530, 0, 265)
+framedupemoney.Visible = false
+
+slot1m.Name = "slot1m"
+slot1m.Parent = framedupemoney
+slot1m.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+slot1m.Position = UDim2.new(0.047169812, 0, 0.0679245293, 0)
+slot1m.Size = UDim2.new(0, 200, 0, 50)
+slot1m.Font = Enum.Font.ArialBold
+slot1m.Text = "SLOT 1"
+slot1m.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot1m.TextSize = 20.000
+slot1m.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+slot1m.TextWrapped = true
+
+slot2m.Name = "slot2m"
+slot2m.Parent = framedupemoney
+slot2m.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+slot2m.Position = UDim2.new(0.047169812, 0, 0.366037726, 0)
+slot2m.Size = UDim2.new(0, 200, 0, 50)
+slot2m.Font = Enum.Font.ArialBold
+slot2m.Text = "SLOT 2"
+slot2m.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot2m.TextSize = 20.000
+slot2m.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot3m.Name = "slot3m"
+slot3m.Parent = framedupemoney
+slot3m.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+slot3m.Position = UDim2.new(0.047169812, 0, 0.698113203, 0)
+slot3m.Size = UDim2.new(0, 200, 0, 50)
+slot3m.Font = Enum.Font.ArialBold
+slot3m.Text = "SLOT 3"
+slot3m.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot3m.TextSize = 20.000
+slot3m.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot6m.Name = "slot6m"
+slot6m.Parent = framedupemoney
+slot6m.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+slot6m.Position = UDim2.new(0.556603789, 0, 0.698113203, 0)
+slot6m.Size = UDim2.new(0, 200, 0, 50)
+slot6m.Font = Enum.Font.ArialBold
+slot6m.Text = "SLOT 6"
+slot6m.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot6m.TextSize = 20.000
+slot6m.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot5m.Name = "slot5m"
+slot5m.Parent = framedupemoney
+slot5m.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+slot5m.Position = UDim2.new(0.556603789, 0, 0.366037726, 0)
+slot5m.Size = UDim2.new(0, 200, 0, 50)
+slot5m.Font = Enum.Font.ArialBold
+slot5m.Text = "SLOT 5"
+slot5m.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot5m.TextSize = 20.000
+slot5m.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+slot4m.Name = "slot4m"
+slot4m.Parent = framedupemoney
+slot4m.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+slot4m.Position = UDim2.new(0.556603789, 0, 0.0679245293, 0)
+slot4m.Size = UDim2.new(0, 200, 0, 50)
+slot4m.Font = Enum.Font.ArialBold
+slot4m.Text = "SLOT 4"
+slot4m.TextColor3 = Color3.fromRGB(255, 255, 255)
+slot4m.TextSize = 20.000
+slot4m.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+dupemoneyclose.Name = "dupemoneyclose"
+dupemoneyclose.Parent = framedupemoney
+dupemoneyclose.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+dupemoneyclose.BorderColor3 = Color3.fromRGB(79, 79, 79)
+dupemoneyclose.Position = UDim2.new(0.440441996, 0, 0.0249052811, 0)
+dupemoneyclose.Size = UDim2.new(0, 53, 0, 56)
+dupemoneyclose.Font = Enum.Font.ArialBold
+dupemoneyclose.Text = "^"
+dupemoneyclose.TextColor3 = Color3.fromRGB(255, 255, 255)
+dupemoneyclose.TextScaled = true
+dupemoneyclose.TextSize = 30.000
+dupemoneyclose.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+dupemoneyclose.TextWrapped = true
+
+textdupemoney.Name = "textdupemoney"
+textdupemoney.Parent = frameland
+textdupemoney.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+textdupemoney.BorderColor3 = Color3.fromRGB(0, 0, 0)
+textdupemoney.Position = UDim2.new(0.142131984, 0, 0.367633998, 0)
+textdupemoney.Size = UDim2.new(0, 118, 0, 23)
+textdupemoney.Font = Enum.Font.SourceSans
+textdupemoney.Text = "DUPE MOENY"
+textdupemoney.TextColor3 = Color3.fromRGB(255, 255, 255)
+textdupemoney.TextSize = 14.000
+textdupemoney.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 garis.Name = "garis"
 garis.Parent = guiframe
@@ -988,6 +1159,347 @@ closeframe.TextSize = 14.000
 closeframe.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 closeframe.TextWrapped = true
 
+framewaypoint.Name = "framewaypoint"
+framewaypoint.Parent = guiframe
+framewaypoint.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+framewaypoint.BorderColor3 = Color3.fromRGB(0, 0, 0)
+framewaypoint.Position = UDim2.new(0.212720484, 0, 0.0429999903, 0)
+framewaypoint.Size = UDim2.new(0, 577, 0, 419)
+framewaypoint.Visible = false
+
+garisland_2.Name = "garisland"
+garisland_2.Parent = framewaypoint
+garisland_2.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garisland_2.Position = UDim2.new(0.0524534658, 0, 0.195455998, 0)
+garisland_2.Size = UDim2.new(0, 530, 0, 40)
+garisland_2.Font = Enum.Font.SourceSans
+garisland_2.Text = ""
+garisland_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+garisland_2.TextSize = 14.000
+
+garisland_3.Name = "garisland"
+garisland_3.Parent = framewaypoint
+garisland_3.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+garisland_3.Position = UDim2.new(0.0524534658, 0, 0.388773441, 0)
+garisland_3.Size = UDim2.new(0, 530, 0, 40)
+garisland_3.Font = Enum.Font.SourceSans
+garisland_3.Text = ""
+garisland_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+garisland_3.TextSize = 14.000
+
+texttpcar.Name = "texttpcar"
+texttpcar.Parent = framewaypoint
+texttpcar.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+texttpcar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+texttpcar.Position = UDim2.new(0.138747886, 0, 0.41059342, 0)
+texttpcar.Size = UDim2.new(0, 118, 0, 23)
+texttpcar.Font = Enum.Font.SourceSans
+texttpcar.Text = "TP CAR"
+texttpcar.TextColor3 = Color3.fromRGB(255, 255, 255)
+texttpcar.TextSize = 14.000
+texttpcar.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+texttpchar.Name = "texttpchar"
+texttpchar.Parent = framewaypoint
+texttpchar.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+texttpchar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+texttpchar.Position = UDim2.new(0.138747886, 0, 0.214889362, 0)
+texttpchar.Size = UDim2.new(0, 118, 0, 23)
+texttpchar.Font = Enum.Font.SourceSans
+texttpchar.Text = "TP CHARACTER"
+texttpchar.TextColor3 = Color3.fromRGB(255, 255, 255)
+texttpchar.TextSize = 14.000
+texttpchar.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tomboltpchar.Name = "tomboltpchar"
+tomboltpchar.Parent = framewaypoint
+tomboltpchar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tomboltpchar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tomboltpchar.Position = UDim2.new(0.65989852, 0, 0.214797139, 0)
+tomboltpchar.Size = UDim2.new(0, 118, 0, 23)
+tomboltpchar.Font = Enum.Font.SourceSans
+tomboltpchar.TextColor3 = Color3.fromRGB(255, 255, 255)
+tomboltpchar.TextSize = 14.000
+
+frametpchar.Name = "frametpchar"
+frametpchar.Parent = tomboltpchar
+frametpchar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frametpchar.BorderColor3 = Color3.fromRGB(79, 79, 79)
+frametpchar.Position = UDim2.new(-3.16949153, 0, -0.391304344, 0)
+frametpchar.Size = UDim2.new(0, 566, 0, 338)
+frametpchar.Visible = false
+
+WoodRUs.Name = "WoodRUs"
+WoodRUs.Parent = frametpchar
+WoodRUs.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+WoodRUs.Position = UDim2.new(0.0372331291, 0, 0.0946745574, 0)
+WoodRUs.Size = UDim2.new(0, 118, 0, 23)
+WoodRUs.Font = Enum.Font.SourceSans
+WoodRUs.Text = "WoodRUs"
+WoodRUs.TextColor3 = Color3.fromRGB(0, 0, 0)
+WoodRUs.TextSize = 14.000
+
+BoxedCar.Name = "BoxedCar"
+BoxedCar.Parent = frametpchar
+BoxedCar.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+BoxedCar.Position = UDim2.new(0.0372331291, 0, 0.1893491, 0)
+BoxedCar.Size = UDim2.new(0, 118, 0, 23)
+BoxedCar.Font = Enum.Font.SourceSans
+BoxedCar.Text = "BoxedCar"
+BoxedCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoxedCar.TextSize = 14.000
+
+Furnishings.Name = "Furnishings"
+Furnishings.Parent = frametpchar
+Furnishings.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Furnishings.Position = UDim2.new(0.0372331291, 0, 0.29289943, 0)
+Furnishings.Size = UDim2.new(0, 118, 0, 23)
+Furnishings.Font = Enum.Font.SourceSans
+Furnishings.Text = "Furnishings"
+Furnishings.TextColor3 = Color3.fromRGB(0, 0, 0)
+Furnishings.TextSize = 14.000
+
+LogicShop.Name = "LogicShop"
+LogicShop.Parent = frametpchar
+LogicShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LogicShop.Position = UDim2.new(0.0372331291, 0, 0.390532583, 0)
+LogicShop.Size = UDim2.new(0, 118, 0, 23)
+LogicShop.Font = Enum.Font.SourceSans
+LogicShop.Text = "LogicShop"
+LogicShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+LogicShop.TextSize = 14.000
+
+LandStore.Name = "LandStore"
+LandStore.Parent = frametpchar
+LandStore.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+LandStore.Position = UDim2.new(0.0407296307, 0, 0.494082898, 0)
+LandStore.Size = UDim2.new(0, 118, 0, 23)
+LandStore.Font = Enum.Font.SourceSans
+LandStore.Text = "LandStore"
+LandStore.TextColor3 = Color3.fromRGB(0, 0, 0)
+LandStore.TextSize = 14.000
+
+BobsShack.Name = "BobsShack"
+BobsShack.Parent = frametpchar
+BobsShack.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+BobsShack.Position = UDim2.new(0.0424778834, 0, 0.588757396, 0)
+BobsShack.Size = UDim2.new(0, 118, 0, 23)
+BobsShack.Font = Enum.Font.SourceSans
+BobsShack.Text = "BobsShack"
+BobsShack.TextColor3 = Color3.fromRGB(0, 0, 0)
+BobsShack.TextSize = 14.000
+
+ArtsShop.Name = "ArtsShop"
+ArtsShop.Parent = frametpchar
+ArtsShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+ArtsShop.Position = UDim2.new(0.0424778834, 0, 0.686390579, 0)
+ArtsShop.Size = UDim2.new(0, 118, 0, 23)
+ArtsShop.Font = Enum.Font.SourceSans
+ArtsShop.Text = "ArtsShop"
+ArtsShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArtsShop.TextSize = 14.000
+
+PowerShop.Name = "PowerShop"
+PowerShop.Parent = frametpchar
+PowerShop.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+PowerShop.Position = UDim2.new(0.0424778797, 0, 0.789940774, 0)
+PowerShop.Size = UDim2.new(0, 118, 0, 23)
+PowerShop.Font = Enum.Font.SourceSans
+PowerShop.Text = "PowerShop"
+PowerShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+PowerShop.TextSize = 14.000
+
+SnowGlow.Name = "SnowGlow"
+SnowGlow.Parent = frametpchar
+SnowGlow.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+SnowGlow.Position = UDim2.new(0.393876463, 0, 0.789940774, 0)
+SnowGlow.Size = UDim2.new(0, 118, 0, 23)
+SnowGlow.Font = Enum.Font.SourceSans
+SnowGlow.TextColor3 = Color3.fromRGB(0, 0, 0)
+SnowGlow.TextSize = 14.000
+
+CaveCrawler.Name = "CaveCrawler"
+CaveCrawler.Parent = frametpchar
+CaveCrawler.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+CaveCrawler.Position = UDim2.new(0.393876463, 0, 0.686390579, 0)
+CaveCrawler.Size = UDim2.new(0, 118, 0, 23)
+CaveCrawler.Font = Enum.Font.SourceSans
+CaveCrawler.TextColor3 = Color3.fromRGB(0, 0, 0)
+CaveCrawler.TextSize = 14.000
+
+Frost.Name = "Frost"
+Frost.Parent = frametpchar
+Frost.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Frost.Position = UDim2.new(0.393876463, 0, 0.588757396, 0)
+Frost.Size = UDim2.new(0, 118, 0, 23)
+Frost.Font = Enum.Font.SourceSans
+Frost.TextColor3 = Color3.fromRGB(0, 0, 0)
+Frost.TextSize = 14.000
+
+Green.Name = "Green"
+Green.Parent = frametpchar
+Green.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Green.Position = UDim2.new(0.392128199, 0, 0.494082898, 0)
+Green.Size = UDim2.new(0, 118, 0, 23)
+Green.Font = Enum.Font.SourceSans
+Green.TextColor3 = Color3.fromRGB(0, 0, 0)
+Green.TextSize = 14.000
+
+Gold.Name = "Gold"
+Gold.Parent = frametpchar
+Gold.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Gold.Position = UDim2.new(0.388631701, 0, 0.390532583, 0)
+Gold.Size = UDim2.new(0, 118, 0, 23)
+Gold.Font = Enum.Font.SourceSans
+Gold.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gold.TextSize = 14.000
+
+Volcano.Name = "Volcano"
+Volcano.Parent = frametpchar
+Volcano.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Volcano.Position = UDim2.new(0.388631701, 0, 0.29289943, 0)
+Volcano.Size = UDim2.new(0, 118, 0, 23)
+Volcano.Font = Enum.Font.SourceSans
+Volcano.TextColor3 = Color3.fromRGB(0, 0, 0)
+Volcano.TextSize = 14.000
+
+Cherry.Name = "Cherry"
+Cherry.Parent = frametpchar
+Cherry.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Cherry.Position = UDim2.new(0.388631701, 0, 0.1893491, 0)
+Cherry.Size = UDim2.new(0, 118, 0, 23)
+Cherry.Font = Enum.Font.SourceSans
+Cherry.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cherry.TextSize = 14.000
+
+Oak.Name = "Oak"
+Oak.Parent = frametpchar
+Oak.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Oak.Position = UDim2.new(0.388631701, 0, 0.0946745574, 0)
+Oak.Size = UDim2.new(0, 118, 0, 23)
+Oak.Font = Enum.Font.SourceSans
+Oak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Oak.TextSize = 14.000
+
+Generic.Name = "Generic"
+Generic.Parent = frametpchar
+Generic.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Generic.Position = UDim2.new(0.743526816, 0, 0.789940774, 0)
+Generic.Size = UDim2.new(0, 118, 0, 23)
+Generic.Font = Enum.Font.SourceSans
+Generic.TextColor3 = Color3.fromRGB(0, 0, 0)
+Generic.TextSize = 14.000
+
+Birch.Name = "Birch"
+Birch.Parent = frametpchar
+Birch.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Birch.Position = UDim2.new(0.743526816, 0, 0.686390579, 0)
+Birch.Size = UDim2.new(0, 118, 0, 23)
+Birch.Font = Enum.Font.SourceSans
+Birch.TextColor3 = Color3.fromRGB(0, 0, 0)
+Birch.TextSize = 14.000
+
+Fir.Name = "Fir"
+Fir.Parent = frametpchar
+Fir.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Fir.Position = UDim2.new(0.743526816, 0, 0.588757396, 0)
+Fir.Size = UDim2.new(0, 118, 0, 23)
+Fir.Font = Enum.Font.SourceSans
+Fir.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fir.TextSize = 14.000
+
+Palm.Name = "Palm"
+Palm.Parent = frametpchar
+Palm.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Palm.Position = UDim2.new(0.741778553, 0, 0.494082898, 0)
+Palm.Size = UDim2.new(0, 118, 0, 23)
+Palm.Font = Enum.Font.SourceSans
+Palm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Palm.TextSize = 14.000
+
+Koa.Name = "Koa"
+Koa.Parent = frametpchar
+Koa.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Koa.Position = UDim2.new(0.738282025, 0, 0.390532583, 0)
+Koa.Size = UDim2.new(0, 118, 0, 23)
+Koa.Font = Enum.Font.SourceSans
+Koa.TextColor3 = Color3.fromRGB(0, 0, 0)
+Koa.TextSize = 14.000
+
+Elm.Name = "Elm"
+Elm.Parent = frametpchar
+Elm.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Elm.Position = UDim2.new(0.738282025, 0, 0.29289943, 0)
+Elm.Size = UDim2.new(0, 118, 0, 23)
+Elm.Font = Enum.Font.SourceSans
+Elm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Elm.TextSize = 14.000
+
+Walnut.Name = "Walnut"
+Walnut.Parent = frametpchar
+Walnut.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Walnut.Position = UDim2.new(0.738282025, 0, 0.1893491, 0)
+Walnut.Size = UDim2.new(0, 118, 0, 23)
+Walnut.Font = Enum.Font.SourceSans
+Walnut.TextColor3 = Color3.fromRGB(0, 0, 0)
+Walnut.TextSize = 14.000
+
+Pine.Name = "Pine"
+Pine.Parent = frametpchar
+Pine.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Pine.Position = UDim2.new(0.738282025, 0, 0.0946745574, 0)
+Pine.Size = UDim2.new(0, 118, 0, 23)
+Pine.Font = Enum.Font.SourceSans
+Pine.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pine.TextSize = 14.000
+
+closeframetpchar.Name = "closeframetpchar"
+closeframetpchar.Parent = frametpchar
+closeframetpchar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closeframetpchar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closeframetpchar.Position = UDim2.new(0.92556864, 0, 0.00425605662, 0)
+closeframetpchar.Size = UDim2.new(0, 38, 0, 13)
+closeframetpchar.Font = Enum.Font.ArialBold
+closeframetpchar.Text = "_"
+closeframetpchar.TextColor3 = Color3.fromRGB(255, 0, 0)
+closeframetpchar.TextScaled = true
+closeframetpchar.TextSize = 30.000
+closeframetpchar.TextWrapped = true
+
+tomboltpcar.Name = "tomboltpcar"
+tomboltpcar.Parent = framewaypoint
+tomboltpcar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tomboltpcar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tomboltpcar.Position = UDim2.new(0.65989852, 0, 0.410501182, 0)
+tomboltpcar.Size = UDim2.new(0, 118, 0, 23)
+tomboltpcar.Font = Enum.Font.SourceSans
+tomboltpcar.TextColor3 = Color3.fromRGB(255, 255, 255)
+tomboltpcar.TextSize = 14.000
+
+waypointtext.Name = "waypointtext"
+waypointtext.Parent = framewaypoint
+waypointtext.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+waypointtext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+waypointtext.Position = UDim2.new(0.321489006, 0, 0.0214797128, 0)
+waypointtext.Size = UDim2.new(0, 200, 0, 50)
+waypointtext.Font = Enum.Font.ArialBold
+waypointtext.Text = "WAYPOINT"
+waypointtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+waypointtext.TextSize = 20.000
+
+closeframeway.Name = "closeframeway"
+closeframeway.Parent = framewaypoint
+closeframeway.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closeframeway.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closeframeway.Position = UDim2.new(0.922035098, 0, -0.00166110322, 0)
+closeframeway.Size = UDim2.new(0, 38, 0, 13)
+closeframeway.Font = Enum.Font.ArialBold
+closeframeway.Text = "_"
+closeframeway.TextColor3 = Color3.fromRGB(255, 0, 0)
+closeframeway.TextScaled = true
+closeframeway.TextSize = 30.000
+closeframeway.TextWrapped = true
+
 open.Name = "open"
 open.Parent = maingui
 open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -999,10 +1511,7 @@ open.Text = "OPEN"
 open.TextColor3 = Color3.fromRGB(255, 255, 255)
 open.TextSize = 14.000
 
-
-
-
-----------SCRIPT------------
+-------------------------script----------------------
 
 open.MouseButton1Click:Connect(function()
 	guiframe.Visible = true
@@ -1021,6 +1530,7 @@ infogui.MouseButton1Click:Connect(function()
 	gariscreditcoming.Visible = true
 	gariscreditui.Visible = true
 	gariscredittester.Visible = true
+	framewaypoint.Visible = false
 end)
 
 
@@ -1031,6 +1541,7 @@ tombolframemisc.MouseButton1Click:Connect(function()
 	gariscreditui.Visible = false
 	gariscredittester.Visible = false
 	frameland.Visible = false
+	framewaypoint.Visible = false
 end)
 
 closeframemisc.MouseButton1Click:Connect(function()
@@ -1044,6 +1555,7 @@ end)
 land.MouseButton1Click:Connect(function()
 	frameland.Visible = true
 	framemisclocal.Visible = false
+	framewaypoint.Visible = fa
 end)
 
 closeframemisc_2.MouseButton1Click:Connect(function()
@@ -1056,10 +1568,121 @@ end)
 
 donatebase.MouseButton1Click:Connect(function()
 	framedonatebase.Visible = true
+	garisdupemoney.Visible = false
+	textdupemoney.Visible = false
+	dupemoney.Visible = false
 end)
 
 donatebaseclose.MouseButton1Click:Connect(function()
 	framedonatebase.Visible = false
+	garisdupemoney.Visible = true
+	textdupemoney.Visible = true
+	dupemoney.Visible = true
+end)
+
+dupemoney.MouseButton1Click:Connect(function()
+	framedupemoney.Visible = true
+	textdupemoney.Visible = false
+end)
+
+dupemoneyclose.MouseButton1Click:Connect(function()
+	framedupemoney.Visible = false
+	textdupemoney.Visible = true
+end)
+
+waypoint.MouseButton1Click:Connect(function()
+	framewaypoint.Visible = true
+	framemisclocal.Visible = false
+	gariscredit.Visible = false
+	gariscreditcoming.Visible = false
+	gariscreditui.Visible = false
+	gariscredittester.Visible = false
+	frameland.Visible = false
+
+end)
+
+
+tomboltpchar.MouseButton1Click:Connect(function()
+	frametpchar.Visible = true
+	tomboltpcar.Visible = false
+end)
+
+closeframeway.MouseButton1Click:Connect(function()
+	framewaypoint.Visible = false
+	gariscredit.Visible = true
+	gariscreditcoming.Visible = true
+	gariscreditui.Visible = true
+	gariscredittester.Visible = true
+	
+end)
+
+closeframetpchar.MouseButton1Click:Connect(function()
+	frametpchar.Visible = false
+	tomboltpcar.Visible = true
+end)
+
+
+local WayPoints = {
+	["Wood R Us"] = CFrame.new(265, 5, 57),
+	["SpawnPoint"] = CFrame.new(155, 5, 74),
+	["Land Store"] = CFrame.new(258, 5, -99),
+	["Link's Logic"] = CFrame.new(4607, 9, -798),
+	["Cave"] = CFrame.new(3581, -177, 430),
+	["Volcano"] = CFrame.new(-1585, 625, 1140),
+	["Swamp"] = CFrame.new(-1209, 138, -801),
+	["Palm Island"] = CFrame.new(2549, 5, -42),
+	["Fancy Furnishings"] = CFrame.new(491, 13, -1720),
+	["Boxed Cars"] = CFrame.new(509, 5.2, -1463),
+	["Fine Arts Shop"] = CFrame.new(5207, -156, 719),
+	["Bob's Shack"] = CFrame.new(260, 10, -2542),
+	["Dock"] = CFrame.new(1114, 3.2, -197),
+	["Bridge"] = CFrame.new(113, 15, -977),
+	["End Times"] = CFrame.new(113, -204, -951),
+	["Shrine Of Sight"] = CFrame.new(-1600, 205, 919),
+	["The Den"] = CFrame.new(323, 49, 1930),
+	["Volcano Win"] = CFrame.new(-1675, 358, 1476),
+	["Ski Lodge"] = CFrame.new(1244, 66, 2306),
+	["Strange Man"] = CFrame.new(1061, 20, 1131)
+}
+
+WoodRUs.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Wood R Us"]
+end)
+
+LandStore.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Land Store"]
+end)
+
+LogicShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Link's Logic"]
+end)
+
+Furnishings.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Fancy Furnishings"]
+end)
+
+BoxedCar.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Boxed Cars"]
+end)
+
+ArtsShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Fine Arts Shop"]
+end)
+
+BobsShack.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Bob's Shack"]
+end)
+
+PowerShop.MouseButton1Down:connect(function()
+	local uTorso = workspace:WaitForChild(game.Players.LocalPlayer.Name).HumanoidRootPart
+	uTorso.CFrame = WayPoints["Strange Man"]
 end)
 
 noclip.MouseButton1Click:connect(function()
@@ -1525,7 +2148,7 @@ slot4.MouseButton1Click:connect(function()
 			ML(i)
 			wait(1)
 		end
-		
+
 		repeat wait() until Load.ClientMayLoad:InvokeServer(game.Players.LocalPlayer)
 		OldCFrame = HRP.CFrame
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = EmptyPlot.OriginSquare.CFrame + Vector3.new(0,1,0)
